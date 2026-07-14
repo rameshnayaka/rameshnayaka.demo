@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic Portfolio of Dr. Ramesh Nayaka, Assistant Professor at the Department of Civil & Infrastructure Engineering, IIT Dharwad. Focusing on sustainable infrastructure and structural engineering.">
+  <title>Dr. Ramesh Nayaka | Department of Civil & Infrastructure Engineering, IIT Dharwad</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <!-- Branding / Logo -->
+      <a href="#home" class="logo" id="nav-logo">
+        <span class="logo__name">Dr. Ramesh Nayaka</span>
+        <span class="logo__dept">Civil & Infrastructure Engineering, IIT Dharwad</span>
+      </a>
+
+      <!-- Navigation Links & Actions -->
+      <nav class="nav" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link nav__link--active" id="nav-home">Home</a></li>
+          <li><a href="#about" class="nav__link" id="nav-about">About</a></li>
+          <li><a href="#research" class="nav__link" id="nav-research">Research</a></li>
+          <li><a href="#publications" class="nav__link" id="nav-publications">Publications</a></li>
+          <li><a href="#projects" class="nav__link" id="nav-projects">Projects</a></li>
+          <li><a href="#startup" class="nav__link" id="nav-startup">Startup</a></li>
+          <li><a href="#gallery" class="nav__link" id="nav-gallery">Gallery</a></li>
+          <li><a href="#contact" class="nav__link" id="nav-contact">Contact</a></li>
+        </ul>
+        <!-- Download CV Action -->
+        <a href="#download-cv" class="btn-cv" id="nav-download-cv">
+          <span>Download CV</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </nav>
+
+      <!-- Hamburger Menu Toggle (Mobile) -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <!-- Left Side: Content & Actions -->
+        <div class="hero__content">
+          <div class="hero__greeting">Hello, I'm</div>
+          <h1 class="hero__name">Dr. Ramesh Nayaka</h1>
+          
+          <div class="hero__title-wrapper">
+            <div class="hero__subtitle">Assistant Professor</div>
+            <div class="hero__institution">
+              Department of Civil & Infrastructure Engineering<br>
+              Indian Institute of Technology Dharwad
+            </div>
+          </div>
+          
+          <p class="hero__intro">
+            Working in sustainable infrastructure, construction materials, structural engineering, and research-driven innovations with a focus on creating practical engineering solutions.
+          </p>
+          
+          <!-- Primary Actions -->
+          <div class="hero__actions">
+            <a href="#research" class="btn btn--primary" id="btn-research">View Research</a>
+            <a href="#publications" class="btn btn--outline" id="btn-publications">Publications</a>
+            <a href="#startup" class="btn btn--startup" id="btn-startup-hero">Startup &larr;</a>
+            <a href="#contact" class="btn btn--outline" id="btn-contact">Contact</a>
+          </div>
+        </div>
+
+        <!-- Right Side: Portrait & Subtle Abstract Geometric Background -->
+        <div class="hero__media">
+          <!-- Abstract Engineering Grid Background (SVG) -->
+          <svg class="hero__media-bg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.5" fill="#e2e8f0" />
+              </pattern>
+            </defs>
+            <!-- Dot Matrix Background -->
+            <rect width="100%" height="100%" fill="url(#dotGrid)" />
+            <!-- Engineering Circular and Linear Elements -->
+            <circle cx="200" cy="200" r="150" stroke="#e2e8f0" stroke-width="1" />
+            <circle cx="200" cy="200" r="110" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 8" />
+            <circle cx="200" cy="200" r="70" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 4" />
+            <!-- Angle Indicators -->
+            <line x1="50" y1="50" x2="350" y2="350" stroke="#cbd5e1" stroke-width="0.75" stroke-dasharray="4 6" />
+            <line x1="350" y1="50" x2="50" y2="350" stroke="#cbd5e1" stroke-width="0.75" stroke-dasharray="4 6" />
+            <line x1="200" y1="0" x2="200" y2="400" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="8 8" />
+            <line x1="0" y1="200" x2="400" y2="200" stroke="#cbd5e1" stroke-width="0.5" stroke-dasharray="8 8" />
+            <!-- Structural Outer Frame -->
+            <rect x="40" y="40" width="320" height="320" stroke="#e2e8f0" stroke-width="1" />
+          </svg>
+
+          <!-- Portrait Container -->
+          <div class="hero__image-wrapper">
+            <img src="assets/profile.png" alt="Dr. Ramesh Nayaka portrait" class="hero__image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <!-- Card 1: Publications -->
+          <div class="stat-card" id="stat-publications">
+            <div class="stat-card__number-placeholder">
+              <span>&mdash;</span>
+              <!-- Minimal Document Icon -->
+              <svg class="stat-card__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+                <path d="M6 6h10M6 10h10"/>
+              </svg>
+            </div>
+            <div class="stat-card__label">Research Publications</div>
+          </div>
+
+          <!-- Card 2: Projects -->
+          <div class="stat-card" id="stat-projects">
+            <div class="stat-card__number-placeholder">
+              <span>&mdash;</span>
+              <!-- Minimal Folder Icon -->
+              <svg class="stat-card__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <div class="stat-card__label">Projects</div>
+          </div>
+
+          <!-- Card 3: Patents -->
+          <div class="stat-card" id="stat-patents">
+            <div class="stat-card__number-placeholder">
+              <span>&mdash;</span>
+              <!-- Minimal Lightbulb/Intellectual Property Icon -->
+              <svg class="stat-card__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5.5 5.5 0 0 0 12 2.5 5.5 5.5 0 0 0 6.5 8c0 1 .5 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+                <path d="M9 18h6M10 22h4"/>
+              </svg>
+            </div>
+            <div class="stat-card__label">Patents</div>
+          </div>
+
+          <!-- Card 4: Students Guided -->
+          <div class="stat-card" id="stat-students">
+            <div class="stat-card__number-placeholder">
+              <span>&mdash;</span>
+              <!-- Minimal Graduation Cap Icon -->
+              <svg class="stat-card__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+              </svg>
+            </div>
+            <div class="stat-card__label">Students Guided</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Dr. Ramesh Nayaka &bull; Assistant Professor</p>
+      <div class="footer__divider"></div>
+      <p>Department of Civil & Infrastructure Engineering, Indian Institute of Technology Dharwad</p>
+    </div>
+  </footer>
+
+  <!-- Script for interactivity -->
+  <script src="script.js"></script>
+</body>
+</html>
